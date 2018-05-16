@@ -1,4 +1,4 @@
-FROM elixir:1.6.5-slim
+FROM elixir:1.6.5
 
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" > /etc/apt/sources.list.d/pgdg.list \
     && wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
